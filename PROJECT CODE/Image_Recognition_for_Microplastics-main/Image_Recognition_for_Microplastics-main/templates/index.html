@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Does your water contain microplastics?</title>
+</head>
+<body>
+    <div class="container">
+    
+    <br>
+    <h1>What are microplastics?</h1>
+    <h2>Microplastics are plastic debris that are less than 5 millimeters 
+        in length.</h2>
+    <br>
+     <!-- Use the img element to insert an image -->
+    <img src="../static/Images/microplastic1.png" alt="Pencil">
+    <br>
+    <h1>Where do microplastics come from?</h1>
+    <h2>Microplastics come from many sources, including from larger plastic 
+        debris like plastic bottles that degrade into tiny pieces. 
+    </h2>
+    <br>
+    <img src="../static/Images/Fitz - Bottle.png" alt="Plastic Bottle">
+    <h2>In addition, microbeads, a type of microplastic, are very tiny pieces of 
+        manufactured polyethylene plastic that are added as exfoliants to health and 
+        beauty products, such as some cleansers and toothpastes. These tiny particles 
+        easily pass through water filtration systems and end up in the ocean and Great Lakes.</h2>
+    <br>
+    <img src="../static/Images/Lifesavers - Gel Soap.png" alt="Exfoliant">
+    <h1>Plastic pollution in oceans and rivers is a growing environmental hazard. 
+    </h1>
+    <h2>Plastic is increasingly accumulating on riverbanks, deltas, coastlines, and on the ocean surface. 
+        About 60% of all plastic ever made has been discarded in landfills or in the natural environment.</h2>
+
+    <span class="boxed-text">
+        <img src="https://media4.giphy.com/media/26FKUf6xaZnevRT5C/giphy.gif" alt="microplastics">
+        <h1>Does your water contain microplastics?</h1>
+        <h2>Upload your photo and find out!</h2>
+        <p class="special-text">Take a picture of your water, like this. Crop to 128 by 128 px</p>
+        <br>
+        <br>
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <div class="fieldset">
+                <br>
+                <input type="file" id="imageUpload" name="exp" accept=".jpg, .jpeg, .png" required>
+                <br>
+            </div>
+            <br>
+            <input type="submit" class="styled-button" value="Predict">
+        </form>
+    </span>
+
+    </div>
+</body>
+</html>
